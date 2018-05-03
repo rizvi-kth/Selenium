@@ -1,0 +1,10 @@
+C:\Users\SERIHAS\source\repos\SeleniumCmder\BokaProv\BokaProv\bin\Debug\netcoreapp2.0\BokaProv.deps.json
+C:\Users\SERIHAS\source\repos\SeleniumCmder\BokaProv\BokaProv\bin\Debug\netcoreapp2.0\BokaProv.runtimeconfig.json
+C:\Users\SERIHAS\source\repos\SeleniumCmder\BokaProv\BokaProv\bin\Debug\netcoreapp2.0\BokaProv.runtimeconfig.dev.json
+C:\Users\SERIHAS\source\repos\SeleniumCmder\BokaProv\BokaProv\bin\Debug\netcoreapp2.0\BokaProv.dll
+C:\Users\SERIHAS\source\repos\SeleniumCmder\BokaProv\BokaProv\bin\Debug\netcoreapp2.0\BokaProv.pdb
+C:\Users\SERIHAS\source\repos\SeleniumCmder\BokaProv\BokaProv\obj\Debug\netcoreapp2.0\BokaProv.csproj.CoreCompileInputs.cache
+C:\Users\SERIHAS\source\repos\SeleniumCmder\BokaProv\BokaProv\obj\Debug\netcoreapp2.0\BokaProv.AssemblyInfoInputs.cache
+C:\Users\SERIHAS\source\repos\SeleniumCmder\BokaProv\BokaProv\obj\Debug\netcoreapp2.0\BokaProv.AssemblyInfo.cs
+C:\Users\SERIHAS\source\repos\SeleniumCmder\BokaProv\BokaProv\obj\Debug\netcoreapp2.0\BokaProv.dll
+C:\Users\SERIHAS\source\repos\SeleniumCmder\BokaProv\BokaProv\obj\Debug\netcoreapp2.0\BokaProv.pdb
