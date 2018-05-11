@@ -57,7 +57,6 @@
 				</td>
 				<td></td>
 			</tr>
-
 <tr>
 				<td>open</td>
 				<td>https://fp.trafikverket.se/Boka
@@ -149,6 +148,8 @@
 				</td>
 				<td></td>
 			</tr>
+<tr><td>type</td><td>id=social-security-number-input
+        <datalist><option>id=social-security-number-input</option><option>//input[@id='social-security-number-input']</option><option>//input</option><option>css=#social-security-number-input</option></datalist></td><td>19790927-6599</td></tr>
 <tr>
 				<td>pause</td>
 				<td>
@@ -416,21 +417,34 @@
 				</td>
 				<td></td>
 			</tr>
-<tr><td>if</td><td>varLastSeenDate != varAvailableDate<datalist><option>${varLastSeenDate} == ${varAvailableDate}</option><option>${varLastSeenDate} == ${varAvailableDate}</option><option>False</option><option>1 &gt; 0</option><option>${varLastSeenDate} != ${varAvailableDate}</option>
+<tr><td>if</td><td>varLastSeenDate != varAvailableDate
+        <datalist><option>${varLastSeenDate} == ${varAvailableDate}</option><option>${varLastSeenDate} == ${varAvailableDate}</option><option>False</option><option>1 &gt; 0</option><option>${varLastSeenDate} != ${varAvailableDate}</option>
         <option>varLastSeenDate != varAvailableDate</option>
         </datalist></td><td></td></tr>
-<tr><td>echo</td><td>Different Date Found ${varLastSeenDate} to ${varAvailableDate}<datalist><option>Different Date Found ${varLastSeenDate} to ${varAvailableDate}</option></datalist></td><td></td></tr>
-
-<tr><td>open</td><td>https://qpush.me/en/push/<datalist><option>https://qpush.me/en/push/</option></datalist></td><td></td></tr>
-<tr><td>waitForPageToLoad</td><td><datalist><option></option></datalist></td><td></td></tr>
-<tr><td>typeAndWait</td><td>id=in_name<datalist><option>id=in_name</option><option>name=name</option><option>//input[@id='in_name']</option><option>//form[@id='pushForm']/input</option><option>//input</option><option>css=#in_name</option></datalist></td><td>rizvi_du</td></tr>
-<tr><td>typeAndWait</td><td>id=in_code<datalist><option>id=in_code</option><option>name=code</option><option>//input[@id='in_code']</option><option>//form[@id='pushForm']/input[2]</option><option>//input[2]</option><option>css=#in_code</option></datalist></td><td>328647</td></tr>
-<tr><td>store</td><td>Different Date Found ${varLastSeenDate} to ${varAvailableDate}<datalist><option>${varAvailableDate}</option><option>Test Mesage</option><option>Different Date Found ${varLastSeenDate} to ${varAvailableDate}</option>
+<tr><td>echo</td><td>Different Date Found ${varLastSeenDate} to ${varAvailableDate}
+        <datalist><option>Different Date Found ${varLastSeenDate} to ${varAvailableDate}</option></datalist></td><td></td></tr>
+<tr><td>open</td><td>https://qpush.me/en/push/
+        <datalist><option>https://qpush.me/en/push/</option></datalist></td><td></td></tr>
+<tr><td>waitForPageToLoad</td><td>
+        <datalist><option></option></datalist></td><td></td></tr>
+<tr><td>typeAndWait</td><td>id=in_name
+        <datalist><option>id=in_name</option><option>name=name</option><option>//input[@id='in_name']</option><option>//form[@id='pushForm']/input</option><option>//input</option><option>css=#in_name</option></datalist></td><td>rizvi_du</td></tr>
+<tr><td>typeAndWait</td><td>id=in_code
+        <datalist><option>id=in_code</option><option>name=code</option><option>//input[@id='in_code']</option><option>//form[@id='pushForm']/input[2]</option><option>//input[2]</option><option>css=#in_code</option></datalist></td><td>328647</td></tr>
+<tr><td>store</td><td>Different Date Found ${varLastSeenDate} to ${varAvailableDate}
+        <datalist><option>${varAvailableDate}</option><option>Test Mesage</option><option>Different Date Found ${varLastSeenDate} to ${varAvailableDate}</option>
         </datalist></td><td>q_message</td></tr>
-<tr><td>typeAndWait</td><td>//form[@id='pushForm']/textarea<datalist><option>//form[@id='pushForm']/textarea</option><option>//textarea</option><option>css=textarea.tooltip-error</option></datalist></td><td>${q_message}</td></tr>
-<tr><td>clickAndWait</td><td>id=submit<datalist><option>id=submit</option><option>//button[@id='submit']</option><option>//form[@id='pushForm']/button</option><option>//button</option><option>css=#submit</option></datalist></td><td></td></tr><tr><td>store</td><td>${varAvailableDate}<datalist><option>${varAvailableDate}</option><option>Different Date Found ${varLastSeenDate} to ${varAvailableDate}</option>
+<tr><td>typeAndWait</td><td>//form[@id='pushForm']/textarea
+        <datalist><option>//form[@id='pushForm']/textarea</option><option>//textarea</option><option>css=textarea.tooltip-error</option></datalist></td><td>${q_message}</td></tr>
+<tr><td>clickAndWait</td><td>id=submit
+        <datalist><option>id=submit</option><option>//button[@id='submit']</option><option>//form[@id='pushForm']/button</option><option>//button</option><option>css=#submit</option><option>id=submit1</option>
+        </datalist></td><td></td></tr>
+<tr><td>store</td><td>${varAvailableDate}
+        <datalist><option>${varAvailableDate}</option><option>Different Date Found ${varLastSeenDate} to ${varAvailableDate}</option>
         </datalist></td><td>varLastSeenDate</td></tr>
-<tr><td>endIf</td><td><datalist><option></option></datalist></td><td></td></tr><tr>
+<tr><td>endIf</td><td>
+        <datalist><option></option></datalist></td><td></td></tr>
+<tr>
 				<td>pause</td>
 				<td>
         <datalist>
