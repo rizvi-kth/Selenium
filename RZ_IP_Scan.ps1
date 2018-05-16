@@ -1,9 +1,8 @@
 ###############################################################################################################
 # Language     :  PowerShell 4.0
-# Filename     :  IPv4NetworkScan.ps1 
-# Autor        :  BornToBeRoot (https://github.com/BornToBeRoot)
+# Filename     :  RZ_IP_Scan.ps1 
+# Autor        :  Rizvi Hasan
 # Description  :  Powerful asynchronus IPv4 Network Scanner
-# Repository   :  https://github.com/BornToBeRoot/PowerShell_IPv4NetworkScanner
 ###############################################################################################################
 
 <#
@@ -16,15 +15,15 @@
     The default result will contain the the IPv4-Address, Status (Up or Down) and the Hostname. Other values can be displayed via parameter.
 
     .EXAMPLE
-    .\IPv4NetworkScan.ps1 -StartIPv4Address 192.168.178.0 -EndIPv4Address 192.168.178.20
+    .\RZ_IP_Scan.ps1 -StartIPv4Address 192.168.178.0 -EndIPv4Address 192.168.178.20
 
     IPv4Address   Status Hostname
     -----------   ------ --------
     192.168.178.1 Up     fritz.box
 
     .EXAMPLE
-    .\IPv4NetworkScan.ps1 -IPv4Address 192.168.178.0 -Mask 255.255.255.0 -DisableDNSResolving
-    .\IPv4NetworkScan.ps1 -IPv4Address 10.151.0.0 -Mask 255.255.252.0 -DisableDNSResolving
+    .\RZ_IP_Scan.ps1 -IPv4Address 192.168.178.0 -Mask 255.255.255.0 -DisableDNSResolving
+    .\RZ_IP_Scan.ps1 -IPv4Address 10.151.0.0 -Mask 255.255.252.0 -DisableDNSResolving
 
     IPv4Address    Status
     -----------    ------
@@ -32,15 +31,14 @@
     192.168.178.22 Up
 
     .EXAMPLE
-    .\IPv4NetworkScan.ps1 -IPv4Address 192.168.178.0 -CIDR 25 -EnableMACResolving
+    .\RZ_IP_Scan.ps1 -IPv4Address 192.168.178.0 -CIDR 25 -EnableMACResolving
 
     IPv4Address    Status Hostname           MAC               Vendor
     -----------    ------ --------           ---               ------
     192.168.178.1  Up     fritz.box          XX-XX-XX-XX-XX-XX AVM Audiovisuelles Marketing und Computersysteme GmbH
     192.168.178.22 Up     XXXXX-PC.fritz.box XX-XX-XX-XX-XX-XX ASRock Incorporation
 
-    .LINK
-    https://github.com/BornToBeRoot/PowerShell_IPv4NetworkScanner/blob/master/README.md
+    
 #>
 
 [CmdletBinding(DefaultParameterSetName='CIDR')]
